@@ -73,3 +73,8 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ## Contact
 
 If you have any questions or suggestions, please email us at [irashettig@gmail.com](mailto:irashettig@gmail.com).
+
+## Dribbble Images, Code, and Links
+
+You can find Dribbble images in the following locations:
+- [Dribbble Project Images](https://dribbble.com/shots/22685285-VG-Food-Ordering-Online-Website)
