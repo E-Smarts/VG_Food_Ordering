@@ -46,7 +46,7 @@ To run this project locally on your XAMPP server, follow these steps:
 
 4. **Configure Database Connection:**
 
-   - In the project directory, find a configuration file (e.g., `config.php`) that contains database connection details.
+   - In the project directory, find a configuration file (e.g., `auth/server.php`) that contains database connection details.
    - Update the database hostname, username, password, and database name to match your local setup.
 
 5. **Start the Local Server:**
@@ -54,15 +54,23 @@ To run this project locally on your XAMPP server, follow these steps:
    - Make sure your XAMPP Apache and MySQL services are running.
    - Open your web browser and visit `http://localhost/VG-Food-Ordering` to access the website.
 
+## Logging In
+
+### Admin Login:
+
+- Username: `admin`
+- Password: `admin`
+
+### User Login:
+
+- Users can register on the website to create their accounts.
+- After registration, they will receive a username and password.
+- Use the provided username and password to log in as a user.
+
 ## Contributions
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
-If you have any questions or suggestions, please email us at [your-email@example.com](mailto:your-email@example.com).
-```
+If you have any questions or suggestions, please email us at [irashettig@gmail.com](mailto:irashettig@gmail.com).
