@@ -17,7 +17,6 @@ VG-Food-Ordering is a web-based platform that allows users to browse a variety o
 
 🛒 **Order Placement**: Easily add items to your cart and complete the order process.
 
-🔒 **Secure Payments**: We prioritize your security with secure payment gateways.
 
 ## Installation
 
@@ -26,7 +25,7 @@ To run this project locally on your XAMPP server, follow these steps:
 1. **Clone the repository:**
 
    ```shell
-   git clone https://github.com/your-username/VG-Food-Ordering.git
+   git clone https://github.com/E-Smarts/VG_Food_Ordering.git
    ```
 
 2. **Navigate to the project directory:**
