@@ -15,7 +15,7 @@
             <div class="logo-details">
                 <a href="/VG_Food_Ordering/">
                     <i class='bx bxs-store'></i>
-                    <span>VG-Food-Ordering ok</span>
+                    <span>VG-Food-Ordering</span>
                 </a>
             </div>
             <div class="menu">

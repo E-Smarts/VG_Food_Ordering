@@ -4,7 +4,7 @@ session_start();
 $username = '';
 $errors = [];
 // connect to the database
-$conn = mysqli_connect('localhost', 'root', '', 'sample');
+$conn = mysqli_connect('localhost', 'root', '', 'vg_food_ordering');
 
 if (isset($_POST['reg_user'])) {
     // receive all input values from the form
