@@ -1,0 +1,229 @@
+@import url(colors.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 252, 252);
+  width: 98%;
+  height: 95vh;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgb(247, 247, 247);
+}
+
+.main_container .home-con {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+.main_container .profile-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+}
+.main_container .home-con .heading {
+  font-size: 50px;
+  color: var(--font1);
+  font-weight: bold;
+  position: absolute;
+  top: 12%;
+  left: 14%;
+}
+.main_container .home-con img {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 100%;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fcfcfc;
+}
+.navbar .logo-details {
+  margin-left: 2%;
+}
+.navbar .logo-details a:hover {
+  text-shadow: 0 0 8px #15151b33;
+  transition: all 0.3s ease;
+}
+.navbar .logo-details a i,
+.navbar .logo-details a span {
+  margin: 0 4px;
+  font-weight: 600;
+  color: var(--font1);
+}
+
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.navbar .menu li {
+  margin: 0 5px;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+.navbar .menu li a {
+  width: 100%;
+  color: var(--font1);
+  transition: all 0.3s ease;
+}
+.navbar .menu li:hover a {
+  text-shadow: 0 0 4px #17172049;
+}
+.product {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 700px;
+  height: 260px;
+  overflow: hidden;
+  padding: 14px 20px;
+}
+
+.product .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 180px;
+  background: #f0f0f0;
+  height: 100%;
+  border: 4px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgb(214, 214, 214);
+}
+
+.product .card img {
+  width: 50%;
+  border: 2px solid white;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.product .card .head {
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+  margin-top: 6px;
+  letter-spacing: normal;
+}
+.product .card .quan {
+  color: rgb(37, 37, 37);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.product .card .cal-pri,
+.product .card .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.product .card .buttons button {
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  height: 24px;
+  border: 2px solid rgb(243, 243, 243);
+  box-shadow: 0 2px 4px rgb(206, 206, 206);
+}
+.main_container .profile-con .pro-card {
+  width: 240px;
+  height: 300px;
+  border: 1px solid rgb(41, 41, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  transition: 0.3s ease;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 20px;
+}
+
+.main_container .profile-con .pro-card:hover {
+  box-shadow: 0 2px 4px rgb(206, 206, 206);
+  transform: translateY(-6px);
+}
+.profile-con .pro-card .img {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-con .pro-card .img img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgb(240, 240, 240);
+  object-fit: cover;
+}
+.profile-con .pro-card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80px;
+}
+.profile-con .pro-card .info .name {
+  font-weight: bold;
+}
+.profile-con .pro-card .info .para {
+  text-align: center;
+}
+.profile-con .pro-card .actions {
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.profile-con .pro-card .actions a {
+  font-size: 22px;
+}

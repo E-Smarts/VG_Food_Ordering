@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#home-img {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+.bg-cover {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: #00000025;
+}
+.alert-con.success {
+  background: #cfffdb;
+}
+.alert-con.error {
+  background: #ffcfd7;
+}
+.alert-con i {
+  font-weight: bold;
+  cursor: pointer;
+}
+.alert-con {
+  position: absolute;
+  z-index: 2;
+  top: 2%;
+  height: 40px;
+  border-radius: 5px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.reg-container {
+  width: 400px;
+  min-height: 250px;
+  border: 2px solid rgb(255, 255, 255);
+  background: #fafafa8e;
+  box-shadow: 2px 2px 20px #f8f8f8;
+  border-radius: 4px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-details i {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgb(224, 224, 224);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.logo-details span {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 8px 0;
+}
+.inputbox {
+  position: relative;
+  width: 270px;
+  margin: 14px 0;
+}
+ .inputbox select,
+ .inputbox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background: #ffffff;
+  outline: none;
+  color: rgb(78, 78, 78);
+  font-size: 0.9rem;
+}
+.inputbox select,
+.inputbox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  border-radius: 3px;
+  background: #ffffff;
+  outline: none;
+  color: rgb(78, 78, 78);
+  font-size: 0.9rem;
+}
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 13px;
+  pointer-events: none;
+  font-size: 0.7rem;
+  color: rgb(78, 78, 78);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: 0.3s;
+}
+.inputbox select:focus,
+.inputbox select:valid,
+.inputbox input:focus,
+.inputbox input:valid {
+  box-shadow: 0 2px 5px rgb(230, 230, 230);
+}
+.inputbox input:focus ~ span,
+.inputbox select:focus ~ span,
+.inputbox select:valid ~ span,
+.inputbox input:valid ~ span {
+  transform: translateX(10px) translateY(-5px);
+  padding: 0 10px;
+  background: white;
+  font-size: 0.65rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.295);
+  border-right: 1px solid rgba(0, 0, 0, 0.295);
+  letter-spacing: 0.2em;
+}
+.btnbox {
+  width: 270px;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btnbox a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnbox a,
+.btnbox button {
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #4070f4;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  width: 48%;
+  height: 32px;
+  font-weight: 700;
+}
+.btnbox.back {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+}
+.btnbox .backBtn {
+  background: #e22222;
+}
+
+.btnbox .backBtn:hover {
+  background: #c40707;
+}
+
+.btnbox .submit:hover {
+  background-color: #1750ee;
+  box-shadow: 0 3px 8px rgb(207, 207, 207);
+}
+
+.add_category{
+  position: absolute;
+  backdrop-filter: blur(1.9px);
+  left: 0;top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.add_category.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_category #addCategory{
+  height: auto;
+  padding: 20px 30px;
+  background: rgb(250, 249, 249);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.219);
+}
